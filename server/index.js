@@ -24,8 +24,8 @@ app.get('/send-text',(req,res) =>{
 
     client.messages.create({
         body: "this is a test",
-        to:+15109130088,
-        from: +13344715750
+        to: abc,
+        from: def
     }).then((message) => {
       console.log(message.body);
       res.status(200).end();
