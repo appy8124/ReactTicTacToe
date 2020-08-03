@@ -34,17 +34,17 @@ app.get('/send-text',(req,res) =>{
     });
 });
 
-// app.post('/api/messages',(req,res) => {
-//     res.header('Content-Type', 'application/json');
-//     client.messages
-//     .create({
-//       from: process.env.TWILIO_PHONE_NUMBER,
-//       x: req.body.x,
-//       o: req.body.o
-//     }).then(() => {
-//         res.send(JSON.stringify({ success: true }));
-//     }).catch(err => {
-//         console.log(err);
-//         res.send(JSON.stringify({ success: false }));
-//       });
-// });
+app.post('/api/messages',(req,res) => {
+    res.header('Content-Type', 'application/json');
+    client.messages
+    .create({
+      from: process.env.TWILIO_PHONE_NUMBER,
+      x: req.body.x,
+      o: req.body.o
+    }).then(() => {
+        res.send(JSON.stringify({ success: true }));
+    }).catch(err => {
+        console.log(err);
+        res.send(JSON.stringify({ success: false }));
+      });
+});
