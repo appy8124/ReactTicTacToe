@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href = "navBar.css">
+
+<body>
+
+    <div class="navbar">
+      <a href="#home">Home</a>
+      <a href="#news">News</a>
+      <div class="dropdown1">
+        <button class="dropbtn1" onclick="showDropDown1()">Products
+    
+        </button>
+        <div class="dropdown-content1" id="dropDown1">
+            <a href="#">Sucky Vaccuum Cleaner</a>
+            <a href="#">Expensive PaperWeight</a>
+        </div>
+      </div> 
+      <a href="#support">Support</a>
+      <a href="#news">Contact</a>
+    <div class="dropdown2">
+        <button class="dropbtn2" onclick="showDropDown2()">Account
+    
+        </button>
+
+        <div class="dropdown-content2" id = "dropdown2">
+            <a href = "#">Settings</a>
+            <a href = "#">Logout</a>
+        </div>
+    </div>
+
+    </div>
+    
+    
+    <script>
+   
+    function showDropDown1() {
+      document.getElementById("dropDown1").classList.toggle("show");
+    }
+
+
+    function showDropDown2(){
+        document.getElementById("dropdown2").classList.toggle("show");
+    }
+
+
+    
+    
+    // window.onclick = function(e) {
+    //   if (!e.target.matches('.dropbtn')) {
+    //   var myDropdown = document.getElementById("myDropdown");
+    //     if (myDropdown.classList.contains('show')) {
+    //       myDropdown.classList.remove('show');
+    //     }
+    //   }
+    // }
+    </script>
+    </body>
+    </html>
+    

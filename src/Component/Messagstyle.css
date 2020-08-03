@@ -1,0 +1,22 @@
+.sms-form {
+    text-align: left;
+    padding: 0.5em;
+  }
+  .sms-form label {
+    display: block;
+  }
+
+  .sms-form div.phone {
+    padding: 20px;
+    margin-bottom: 0.5em;
+  }
+  .sms-form button {
+    font-size: 1em;
+   
+  }
+  .sms-form.error {
+    outline: 2px solid #f00;
+  }
+
+
+  
